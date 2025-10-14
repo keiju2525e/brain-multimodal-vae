@@ -1,0 +1,20 @@
+[project]
+name = "fmri-reconstruction-with-dmvae"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "keiju2525e", email = "keiju2525e@gmail.com" }
+]
+requires-python = ">=3.10.17"
+dependencies = [
+    "matplotlib>=3.10.6",
+    "pixyz>=0.3.2",
+    "torchnet>=0.0.4",
+    "torchvision>=0.23.0",
+    "tqdm>=4.67.1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
