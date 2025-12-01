@@ -39,6 +39,7 @@ def load_data(data_dir, subject_list, n_train_repetitions=5, normalize=True, as_
         if normalize:
             train_mean = np.mean(train_brain, axis=0)
             train_std = np.std(train_brain, axis=0, ddof=1)
+            train_std = train_std + np.finfo(train_std.dtype).eps
 
             train_brain = (train_brain - train_mean) / train_std
             test_brain = (test_brain - train_mean) / train_std 
