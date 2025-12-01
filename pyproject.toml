@@ -1,5 +1,5 @@
 [project]
-name = "fmri-reconstruction-with-dmvae"
+name = "brain-multimodal-vae"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -8,11 +8,22 @@ authors = [
 ]
 requires-python = ">=3.10.17"
 dependencies = [
+    "argparse>=1.4.0",
+    "bdpy>=0.25.1",
+    "fastl2lir>=0.10",
+    "h5py>=3.15.0",
+    "ipykernel>=7.0.1",
+    "jupyter>=1.1.1",
     "matplotlib>=3.10.6",
+    "pandas>=2.3.3",
     "pixyz>=0.3.2",
+    "seaborn>=0.13.2",
+    "torch>=2.8.0",
+    "torchmetrics>=1.8.2",
     "torchnet>=0.0.4",
     "torchvision>=0.23.0",
     "tqdm>=4.67.1",
+    "webdataset>=1.0.2",
 ]
 
 [build-system]
